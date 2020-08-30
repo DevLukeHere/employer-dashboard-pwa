@@ -1,0 +1,143 @@
+/* colours */
+:root{
+  --primary: #CC3349;
+  --secondary: #1a8fbf;
+  --tertiary: black;
+  --title: #FFFF;
+}
+
+.wobb-logo {
+  max-width: 80px;
+  margin-top: 16px;
+}
+
+.side-nav-logo-container {
+  text-align: center;
+}
+
+.nav-wrapper {
+  background-color: #FFFF;
+}
+
+.sidenav-trigger {
+  color: black;
+}
+
+.dark-mode-switch {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.upload-logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-logo-footer, .company-details-footer, .talents-available-now-footer {
+  text-align: center;
+}
+
+.upload-logo-btn, .company-details-btn {
+  background-color: var(--secondary);
+}
+
+.company-detail-row-1, .company-detail-row-2, .company-detail-row-3, .company-detail-row-4, .company-detail-row-5, .company-detail-row-6, .company-detail-row-7, .company-detail-row-8, .company-detail-row-9 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-detail-title {
+  font-weight: bold;
+}
+
+.company-last-update-info {
+  text-align: center;
+  font-size: x-small;
+}
+
+.modal-content {
+  padding: 8px 24px 24px 24px;
+}
+
+.talents-available-now-title {
+  font-weight: inherit;
+  text-align: center;
+}
+
+.talents-available-now-content {
+  text-align: center;
+}
+
+/* Floating action button */
+.floating-btn {
+  background-color: #19975D;
+}
+.new-job-btn {
+  background-color: var(--primary);
+}
+.internship-btn {
+  background-color: var(--secondary);
+}
+.manage-job-btn {
+  background-color: black;
+}
+.overlay {
+  display: none;
+  background-color: #E1E1E1;
+  opacity: 0.80;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 900;
+}
+.material-tooltip {
+  display: none !important;
+}
+.mobile-fab-tip {
+  position: fixed;
+  right: 85px;
+  padding: 7px 5px;
+  text-align: right;
+  background-color: black;
+  border-radius: 5px;
+  color: #FFF;
+  opacity: 0;
+}
+.mobile-fab-tip {
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+

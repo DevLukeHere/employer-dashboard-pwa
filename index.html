@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WOBB Employer Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.js"></script>
+  <link rel="manifest" href="/manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="/icons/wobb-logo-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#CC3349">
+  <meta name="theme-color" content="#CC3349">
+</head>
+<body class="grey lighten-4">
+
+  <!-- Burger icon side navigation -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="logo-container">
+        <a href="#" class="brand-logo"><img src="./img/logos/wobb-logo-trimmed.png" alt="wobb-logo" class="wobb-logo"></a>
+      </div>
+      <div class="burger-icon">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side navigation bar -->
+  <div>
+    <ul class="sidenav" id="mobile-demo">
+      <div class="side-nav-logo-container">
+        <a href="#" class="brand-logo center-align"><img src="./img/logos/wobb-logo-trimmed.png" alt="wobb-logo" class="wobb-logo"></a>
+      </div>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Order History</a></li>
+      <li><a href="#">All Applicants</a></li>
+      <li><a href="#">Create Company Profile</a></li>
+      <li><a href="#">Company Details</a></li>
+      <li><a href="#">Manage Company Affilliations</a></li>
+      <li><a href="#">Log Out</a></li>
+  
+      <div class="switch dark-mode-switch">
+        <label>
+          Dark Mode
+          <input id="dark-mode-checkbox" type="checkbox">
+          <span class="lever"></span>
+        </label>
+      </div>
+    </ul>
+  </div>
+
+  <!-- Company logo upload card -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card white darken-1">
+        <div class="card-content upload-logo-header">
+          <span class="card-title">Welcome, Luke!</span>
+          <i class="material-icons upload-logo">photo_size_select_actual</i>
+          <p>Update company banner</p>
+        </div>
+        <div class="card-action upload-logo-footer">
+          <a class="waves-effect waves-light btn upload-logo-btn">Upload</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company info summary card -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card white darken-1">
+        <div class="card-content upload-logo-header">
+          <span class="card-title">Company Details</span>
+          <p>View your company details & update them here!</p>
+        </div>
+        <div class="card-action company-details-footer">
+          <a class="waves-effect waves-light btn modal-trigger company-details-btn" href="#company-details-modal">View</a>
+          <!-- Company info modal -->
+          <div id="company-details-modal" class="modal modal-fixed-footer">
+            <div class="company-last-update-info">
+              <p>Details last updated on: 20 July, 2020</p>
+            </div>
+            <div class="modal-content">
+              <div class="company-detail-row-1">
+                <div class="company-detail-title">
+                  <p>Company ID</p>
+                </div>
+                <div class="company-detail">
+                  <p>75c6b279-7931-4d7b-abec-3e44e7da9c70</p>
+                </div>
+              </div>
+              <div class="company-detail-row-2">
+                <div class="company-detail-title">
+                  <p>Display Name:</p>
+                </div>
+                <div class="company-detail">
+                  <p>Luke Testing Company</p>
+                </div>
+              </div>
+              <div class="company-detail-row-3">
+                <div class="company-detail-title">
+                  <p>Registered Name:</p>
+                </div>
+                <div class="company-detail">
+                  <p>Luke Testing Company</p>
+                </div>
+              </div>
+              <div class="company-detail-row-4">
+                <div class="company-detail-title">
+                  <p>E-mail:</p>
+                </div>
+                <div class="company-detail">
+                  <p>luke@hotmail.com</p>
+                </div>
+              </div>
+              <div class="company-detail-row-5">
+                <div class="company-detail-title">
+                  <p>Contact Number:</p>
+                </div>
+                <div class="company-detail">
+                  <p>0123456789</p>
+                </div>
+              </div>
+              <div class="company-detail-row-6">
+                <div class="company-detail-title">
+                  <p>Website:</p>
+                </div>
+                <div class="company-detail">
+                  <p>www.luketestingcompany.com</p>
+                </div>
+              </div>
+              <div class="company-detail-row-7">
+                <div class="company-detail-title">
+                  <p>Industry:</p>
+                </div>
+                <div class="company-detail">
+                  <p>Hospitality</p>
+                </div>
+              </div>
+              <div class="company-detail-row-8">
+                <div class="company-detail-title">
+                  <p>No. of Employees:</p>
+                </div>
+                <div class="company-detail">
+                  <p>11 to 50 employees</p>
+                </div>
+              </div>
+              <div class="company-detail-row-9">
+                <div class="company-detail-title">
+                  <p>Company Type:</p>
+                </div>
+                <div class="company-detail">
+                  <p>Young Startup < 5 Years</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="modal-close black-text waves-effect waves-green btn-flat">Update</a>
+              <a href="#" class="modal-close black-text waves-effect waves-green btn-flat">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Talents available now card -->
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/images/wobb-employer-talent-search.jpg">
+        </div>
+        <div class="card-content talents-available-now-content">
+          <span class="card-title talents-available-now-title">Talent Available Now</span>
+          <p>WOBB wants to support the government's initiative to help people who have become unemployed due to the global pandemic</p>
+          <p>So, we are giving employers free CV access to job seekers who have marked themselves as openly available for positions.</p>
+        </div>
+        <div class="card-action talents-available-now-footer">
+          <a class="waves-effect waves-light btn upload-logo-btn">View CVs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Floating action button -->
+  <div class="overlay-trigger">  
+    <div class="fixed-action-btn" style="bottom: 32px; right: 16px;">
+      <a class="btn-floating btn-large floating-btn">
+        <i class="large material-icons">settings</i>
+      </a>
+      <ul>
+        <li>
+          <span class="mobile-fab-tip">Manage Jobs</span>
+          <a href="#" class="btn-floating manage-job-btn tooltipped" data-position="left">
+            <i class="material-icons">storage</i>
+          </a>
+        </li>
+        <li>
+          <span class="mobile-fab-tip">Post New Job</span>
+          <a href="#" class="btn-floating new-job-btn tooltipped" data-position="left">
+            <i class="material-icons">business_center</i>
+          </a>
+        </li>
+        <li>
+          <span class="mobile-fab-tip">Post Free Internship</span>
+          <a href="#" class="btn-floating internship-btn tooltipped" data-position="left">
+            <i class="material-icons">people</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Company profile -->
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-content talents-available-now-content">
+          <span class="card-title talents-available-now-title">Company Profile</span>
+          <p>Create your company profile here!</p>
+        </div>
+        <div class="card-action talents-available-now-footer">
+          <a class="waves-effect waves-light btn upload-logo-btn">Create</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent applicants -->
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-content talents-available-now-content">
+          <span class="card-title talents-available-now-title">Recent Applicants</span>
+          <p>View recent applicants for your jobs here!</p>
+        </div>
+        <div class="card-action talents-available-now-footer">
+          <a class="waves-effect waves-light btn upload-logo-btn">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/db.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/ui.js"></script>
+</body>
+</html>
